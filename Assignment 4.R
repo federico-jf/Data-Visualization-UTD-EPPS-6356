@@ -39,3 +39,18 @@ barplot2<-ggplot(data=mydata2, aes(x=number_of_followers, y=from_user)) +
   theme(text=element_text(size=13,family="NimbusRom"))+
   facet_wrap(~location, ncol=2)
 barplot2 
+
+# Number of tweets per day
+mydata3 <- read.delim("/Users/feder/Desktop/tweets_per_day.txt")
+head(mydata3)
+
+barplot3<-ggplot(data=mydata3, aes(x=Number.of.tweets, y=Day)) +
+  geom_bar(stat="identity", width=0.9, fill="orange")+
+  geom_text(aes(label=Number.of.tweets), vjust=-0.3, size=3.5)+
+  labs(title="Number of tweets using #AlevelResults per day", 
+       x="Number of tweets", y = "Day")+
+  theme_minimal() + 
+  theme(text=element_text(size=10,family="sans"))
+  
+# Horizontal bar plot
+barplot3 + coord_flip()
