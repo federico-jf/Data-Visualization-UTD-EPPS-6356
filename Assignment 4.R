@@ -14,7 +14,7 @@ library(ggplot2)
 
 head(mydata)
 
-# Basic barplot
+# Barplot A-level exam general results
 barplot<-ggplot(data=mydata, aes(x=Difference, y=Percentage)) +
   geom_bar(stat="identity", width=0.9, fill="lightblue")+
   geom_text(aes(label=Percentage), vjust=-0.3, size=3.5)+
@@ -25,7 +25,8 @@ barplot<-ggplot(data=mydata, aes(x=Difference, y=Percentage)) +
 barplot  
 
 
-# reading in the data
+# Barplot faceted barplot: Top 10 tweeters using #AlevelResults by location
+#reading in the data
 mydata2 <- read.delim("/Users/feder/Desktop/top_tweeters.txt")
 head(mydata2)
 
