@@ -31,7 +31,7 @@ uspop
 ui <- fluidPage(
   
   # App title ----
-  titlePanel("Federico Ferrero Datasets"),
+  titlePanel("R Datasets"),
   
   # Sidebar layout with input and output definitions ----
   sidebarLayout(
