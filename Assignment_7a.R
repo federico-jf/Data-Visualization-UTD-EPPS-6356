@@ -1,4 +1,4 @@
-##Assignment 7
+##Assignment 7a
 ##Federico Ferrero
 ## Adapted from Beeley, Chris and Shitalkumar R. Sukhdeve, 2018. Web application development 
 ## with R using Shiny (3rd ed.) Packt Publishing Ltd.
