@@ -1,3 +1,4 @@
+# People who more responds to others is highlighted / layout: 'stress'
 #Project Data Visualization
 # http://pablobarbera.com/big-data-upf/html/02a-networks-intro-visualization.html
 #Federico Ferrero
@@ -40,8 +41,6 @@ plot(g,
      layout=layout.graphopt,
      main= "#AlevelResults complete network")
 
-
-
 ###
 library(rtweet)
 library(igraph)
@@ -54,7 +53,7 @@ V(g)$node_label <- unname(ifelse(degree(g)[V(g)] > 20, names(V(g)), ""))
 V(g)$node_size <- unname(ifelse(degree(g)[V(g)] > 20, degree(g), 0)) 
 
 
-# People who more responds to others is highlighted / layout: linear, kk, 'stress', 'fr', 'lgl', 'graphopt' 
+# People who more responds to others is highlighted / layout: kk 
 ggraph(g, layout = "kk") + 
         geom_edge_arc(edge_width=0.1, aes(alpha=..index..)) +
         geom_node_label(aes(label=node_label, size=node_size),
@@ -67,6 +66,64 @@ ggraph(g, layout = "kk") +
         theme(legend.position="none")
 
 # People who more responds to others is highlighted / layout: 'stress'
+ggraph(g, layout = "stress") + 
+        geom_edge_arc(edge_width=0.1, aes(alpha=..index..)) +
+        geom_node_label(aes(label=node_label, size=node_size),
+                        label.size=0, fill="#ffffff66", segment.colour="springgreen",
+                        color="blue", repel=TRUE, family="Apple Garamond") +
+        coord_fixed() +
+        scale_size_area(trans="sqrt") +
+        labs(title="#AlevelResults Retweet Relationships") +
+        theme_graph(base_family="Apple Garamond") +
+        theme(legend.position="none")
+
+# People who more responds to others is highlighted / layout:'fr' 
+ggraph(g, layout = "fr") + 
+        geom_edge_arc(edge_width=0.1, aes(alpha=..index..)) +
+        geom_node_label(aes(label=node_label, size=node_size),
+                        label.size=0, fill="#ffffff66", segment.colour="springgreen",
+                        color="blue", repel=TRUE, family="Apple Garamond") +
+        coord_fixed() +
+        scale_size_area(trans="sqrt") +
+        labs(title="#AlevelResults Retweet Relationships") +
+        theme_graph(base_family="Apple Garamond") +
+        theme(legend.position="none")
+
+# People who more responds to others is highlighted / layout:  'lgl'
+ggraph(g, layout = "lgl") + 
+        geom_edge_arc(edge_width=0.1, aes(alpha=..index..)) +
+        geom_node_label(aes(label=node_label, size=node_size),
+                        label.size=0, fill="#ffffff66", segment.colour="springgreen",
+                        color="blue", repel=TRUE, family="Apple Garamond") +
+        coord_fixed() +
+        scale_size_area(trans="sqrt") +
+        labs(title="#AlevelResults Retweet Relationships") +
+        theme_graph(base_family="Apple Garamond") +
+        theme(legend.position="none")
+
+# People who more responds to others is highlighted / layout:'graphopt' 
+ggraph(g, layout = "graphopt") + 
+        geom_edge_arc(edge_width=0.1, aes(alpha=..index..)) +
+        geom_node_label(aes(label=node_label, size=node_size),
+                        label.size=0, fill="#ffffff66", segment.colour="springgreen",
+                        color="blue", repel=TRUE, family="Apple Garamond") +
+        coord_fixed() +
+        scale_size_area(trans="sqrt") +
+        labs(title="#AlevelResults Retweet Relationships") +
+        theme_graph(base_family="Apple Garamond") +
+        theme(legend.position="none")
+
+# People who more responds to others is highlighted / circular layout
+ggraph(g, layout = 'linear', circular = TRUE) +
+        geom_edge_arc(edge_width=0.125, aes(alpha=..index..)) +
+        geom_node_label(aes(label=node_label, size=node_size),
+                        label.size=0, fill="#ffffff66", segment.colour="springgreen",
+                        color="blue", repel=TRUE, family="Apple Garamond") +
+        coord_fixed() +
+        scale_size_area(trans="sqrt") +
+        labs(title="#AlevelResults Retweet Relationships") +
+        theme_graph(base_family="Apple Garamond") +
+        theme(legend.position="none")
 ggraph(g, layout = "stress") + 
         geom_edge_arc(edge_width=0.1, aes(alpha=..index..)) +
         geom_node_label(aes(label=node_label, size=node_size),
