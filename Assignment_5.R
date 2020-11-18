@@ -8,11 +8,6 @@
 rm(list=ls())
 library(ggplot2)
 
-# reading in the data
-mydata <- read.delim("/Users/feder/Desktop/Alevelresults.txt")
-head(mydata)
-
-
 # Number of tweets per day: line chart
 mydata3 <- read.delim("/Users/feder/Desktop/tweets_per_day.txt")
 head(mydata3)
