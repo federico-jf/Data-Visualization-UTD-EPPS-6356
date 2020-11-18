@@ -13,15 +13,16 @@ mydata <- read.delim("/Users/feder/Desktop/Alevelresults.txt")
 head(mydata)
 
 # Barplot A-level exam general results
+area.color <- c("firebrick3", "firebrick3", "firebrick3", "springgreen4", "steelblue1", "steelblue1", "steelblue1")
 barplot<-ggplot(data=mydata, aes(x=Difference, y=Percentage)) +
-  geom_bar(stat="identity", width=0.9, fill="lightblue")+
+  geom_bar(stat="identity", width=0.9, fill=area.color)+
   geom_text(aes(label=Percentage), vjust=-0.3, size=3.5)+
   labs(title="A-level results in UK (2020) compared with teachers' predictions", 
        caption= "Source: BBC", 
        x="Difference with teachers' predictions", y = "Percentage")+
   theme_minimal() + 
   theme(text=element_text(size=13,  family="serif"))
-barplot  
+barplot
 
 # Barplot faceted barplot: Top 10 tweeters using #AlevelResults by location
 #reading in the data
