@@ -110,6 +110,55 @@ ggplot(aes(x=time, y=user_followers_count), data=complete_tweets) +
   theme_minimal() 
 
 
+
+###### SOCIAL NETWORK ANALYSIS #######
+# Clear environment
+rm(list=ls())
+
+#call libraries
+library(igraph)
+library(rtweet)
+library(igraph)
+library(ggraph)
+require("hrbrthemes")
+require("ggraph")
+library(tidyverse)
+
+# reading in the data
+
+g <- read.delim("/Users/feder/Desktop/BASE.txt")
+g <- read.delim("/Users/feder/Desktop/BASE2.txt")# this base contains from 14 to 17 Aug
+g <- read.delim("/Users/feder/Desktop/BASE14.txt")
+
+# create data graph
+g <- graph.data.frame(g, directed= T)
+
+# remove loops in the igraph
+g <- simplify(g, remove.multiple = F, remove.loops = T) 
+
+# check number of edges and nodes
+E(g)# edges= 2312
+V(g)# vertex= 49111
+
+# defining labels and degrees
+V(g)$node_label <- unname(ifelse(degree(g)[V(g)] > 20, names(V(g)), "")) 
+V(g)$node_size <- unname(ifelse(degree(g)[V(g)] > 20, degree(g), 0)) 
+
+# People who are more mentioned is highlighted / layout: kk 
+ggraph(g, layout = "kk") + 
+        geom_edge_arc(edge_width=0.1, aes(alpha=..index..)) +
+        geom_node_label(aes(label=node_label, size=node_size),
+                        label.size=0, fill="#ffffff66", segment.colour="springgreen",
+                        color="blue", repel=TRUE, family="Apple Garamond") +
+        coord_fixed() +
+        scale_size_area(trans="sqrt") +
+        labs(title="#AlevelResults: tweeters who are more mentioned") +
+        theme_graph(base_family="Apple Garamond") +
+        theme(legend.position="none")
+
+
+
+
 ###### SENTIMENT ANALYSIS ########
 # Federico Ferrero
 # Text mining exercises following Text Mining with R (Silge and Robinson, 2017)
