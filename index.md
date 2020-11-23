@@ -48,6 +48,9 @@ The general objective is to explore data from Twitter with the hashtag #AlevelRe
 
 ![SNA & tweets](https://user-images.githubusercontent.com/53381800/100024836-2ea3a200-2dad-11eb-873a-264340702159.png)
 
+![image](https://user-images.githubusercontent.com/53381800/100024955-71657a00-2dad-11eb-9da8-9a941369aa84.png)
+
+
 
 
 
