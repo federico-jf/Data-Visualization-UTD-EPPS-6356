@@ -5,7 +5,6 @@
 #Federico Ferrero
 #Fall 2020
 
-
 # Clear environment 
 rm(list=ls())
 library(ggplot2)
