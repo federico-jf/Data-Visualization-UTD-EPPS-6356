@@ -36,10 +36,7 @@ The general objective is to explore data from Twitter with the hashtag #AlevelRe
 
 ## Results and visualizations
 
-![Image of general results] (https://github.com/federico-jf/Data-Visualization-UTD-EPPS-6356/blob/master/general_results.png?raw=true)
-
-![ggdgdgdg] (https://github.com/federico-jf/Data-Visualization-UTD-EPPS-6356/blob/gh-pages/general_results.png?raw=true)
-
+![general_results](https://user-images.githubusercontent.com/53381800/100023702-09159900-2dab-11eb-8731-4de8c7ffd6cb.png)
 
 ## Explore the #AlevelResults Database!
 <iframe width="1000" height="700" src="https://federicoferrero.shinyapps.io/assignment7b/"></iframe>
