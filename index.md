@@ -40,6 +40,9 @@ The general objective is to explore data from Twitter with the hashtag #AlevelRe
 
 ![tweets_per_day](https://user-images.githubusercontent.com/53381800/100024534-9c030300-2dac-11eb-9e63-f8b961bce2d2.png)
 
+![Number of followers by time](https://user-images.githubusercontent.com/53381800/100024633-c94fb100-2dac-11eb-98aa-2f99f28a0b8c.png)
+
+
 
 ## Explore the #AlevelResults Database!
 <iframe width="1000" height="700" src="https://federicoferrero.shinyapps.io/assignment7b/"></iframe>
