@@ -50,8 +50,7 @@ The general objective is to explore data from Twitter with the hashtag #AlevelRe
 
 ![image](https://user-images.githubusercontent.com/53381800/100024955-71657a00-2dad-11eb-9da8-9a941369aa84.png)
 
-
-
+![image](https://user-images.githubusercontent.com/53381800/100025027-9ce86480-2dad-11eb-8ab1-e08a275e3356.png)
 
 
 ## Explore the #AlevelResults Database!
