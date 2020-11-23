@@ -1,5 +1,6 @@
 
-#Data Visualization EPPS6356
+###### Data Visualization EPPS6356 #######
+# Professor: Dr. Karl Ho
 #Final Presentation Code
 #Federico Ferrero
 #Fall 2020
