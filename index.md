@@ -38,6 +38,9 @@ The general objective is to explore data from Twitter with the hashtag #AlevelRe
 
 ![general_results](https://user-images.githubusercontent.com/53381800/100023702-09159900-2dab-11eb-8731-4de8c7ffd6cb.png)
 
+![tweets_per_day](https://user-images.githubusercontent.com/53381800/100024534-9c030300-2dac-11eb-9e63-f8b961bce2d2.png)
+
+
 ## Explore the #AlevelResults Database!
 <iframe width="1000" height="700" src="https://federicoferrero.shinyapps.io/assignment7b/"></iframe>
 
