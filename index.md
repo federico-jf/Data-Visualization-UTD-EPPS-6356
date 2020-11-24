@@ -52,7 +52,7 @@ Ofqual's algorithm reduced 39.1% of the estimated grades and increased 2.26% com
 #### Exploring the structure of the network
 ![SNA more mentioned1](https://user-images.githubusercontent.com/53381800/100032837-7da60300-2dbe-11eb-9895-bbbaf46e9365.png)
 
-#### What is the influential network or sub-community that most participates in? 
+#### What is the network (or subcommunity) that participates the most?
 ![SNA & tweets](https://user-images.githubusercontent.com/53381800/100024836-2ea3a200-2dad-11eb-873a-264340702159.png)
 
 #### Who are the most interpellated ones in the discussion?
