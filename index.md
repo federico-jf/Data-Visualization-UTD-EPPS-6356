@@ -88,8 +88,8 @@ ggplot(data=mydata3, aes(x=Day, y=Number.of.tweets, group=1)) +
 ![Number of followers by time](https://user-images.githubusercontent.com/53381800/100024633-c94fb100-2dac-11eb-98aa-2f99f28a0b8c.png)
 
 ```R
-# Barplot faceted barplot: Top 10 tweeters using #AlevelResults by location
-#reading in the data
+# Faceted barplot: Top 10 tweeters using #AlevelResults by location
+# reading in the data
 mydata2 <- read.delim("/Users/feder/Desktop/top_tweeters.txt")
 head(mydata2)
 
