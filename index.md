@@ -36,7 +36,7 @@ The general objective is to explore data from Twitter with the hashtag #AlevelRe
 
 ## Results and visualizations
 
-#### General results
+### General results
 ![general_results](https://user-images.githubusercontent.com/53381800/100023702-09159900-2dab-11eb-8731-4de8c7ffd6cb.png)
 Ofqual's algorithm reduced 39.1% of the estimated grades and increased 2.26% compared to the teachers' predictions.
 ```R
@@ -60,7 +60,7 @@ barplot
 
 
 
-#### How has the reaction around #AlevelResults on Twitter developed in time? 
+### How has the reaction around #AlevelResults on Twitter developed in time? 
 ![tweets_per_day](https://user-images.githubusercontent.com/53381800/100024534-9c030300-2dac-11eb-9e63-f8b961bce2d2.png)
 ```R
 # Number of tweets per day: line chart
@@ -88,7 +88,7 @@ ggplot(data=mydata3, aes(x=Day, y=Number.of.tweets, group=1)) +
 
 
 
-#### How has the reaction around #AlevelResults on Twitter developed in time? (considering number of followers)
+### How has the reaction around #AlevelResults on Twitter developed in time? (considering number of followers)
 ![Number of followers by time](https://user-images.githubusercontent.com/53381800/100024633-c94fb100-2dac-11eb-98aa-2f99f28a0b8c.png)
 ```R
 # check if time is continuos variable
@@ -104,7 +104,7 @@ ggplot(aes(x=time, y=user_followers_count), data=complete_tweets) +
   theme_minimal()
 ```
 
-#### Who are the top users involved in the discussion around #AlevelResults on Twitter? From which geographic locations did these users participate? 
+### Who are the top users involved in the discussion around #AlevelResults on Twitter? From which geographic locations did these users participate? 
 ![top 15 tweeters by location](https://user-images.githubusercontent.com/53381800/100024674-df5d7180-2dac-11eb-8d2f-1ce4d666e0dd.png)
 ```R
 # Faceted barplot: Top 10 tweeters using #AlevelResults by location
@@ -126,7 +126,7 @@ barplot2
 
 
 
-#### Exploring the structure of the network
+### Exploring the structure of the network
 ![SNA more mentioned1](https://user-images.githubusercontent.com/53381800/100032837-7da60300-2dbe-11eb-9895-bbbaf46e9365.png)
 ```R
 # call library
@@ -164,15 +164,15 @@ ggraph(g, layout = "kk") +
 
 
 
-#### What is the network (or subcommunity) that participates the most?
+### What is the network (or subcommunity) that participates the most?
 ![SNA & tweets](https://user-images.githubusercontent.com/53381800/100024836-2ea3a200-2dad-11eb-873a-264340702159.png)
 
 
-#### Who are the most interpellated ones in the discussion?
+### Who are the most interpellated ones in the discussion?
 ![image](https://user-images.githubusercontent.com/53381800/100024955-71657a00-2dad-11eb-9da8-9a941369aa84.png)
 
 
-#### What feelings are associated with the texts published in the tweets?
+### What feelings are associated with the texts published in the tweets?
 ![image](https://user-images.githubusercontent.com/53381800/100025027-9ce86480-2dad-11eb-8ab1-e08a275e3356.png)
 ```R
 # SENTIMENT ANALYSIS
