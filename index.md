@@ -343,12 +343,19 @@ ofqual %>%
 ```
 ## Conclusions
 •	Results favored students who were enrolled in better schools even if their grades were worse, compared to those in schools with historically worse performance.
+
 •	Private schools versus Public schools.
+
 •	Impact on future educational life: conditions access to higher education institutions & limits opportunities for social mobility.
+
 •	After the publication of the results, the reaction on Twitter was immediate and short.
+
 •	Most of the participants have less than 5000 followers, but there is a considerable group of tweeters with many followers who support the dissemination of the trending topic.
+
 •	Most of top tweeters are coming from the USA. However, top tweeters are not the most active in the discussion.
+
 •	Irony and anger in tweets that mention Boris Johnson and Melvin Williamson.
+
 •	The demand in terms of inequality seems to be more conceptualized in the Ofqual's word cloud. 
 
 
