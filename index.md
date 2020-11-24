@@ -27,7 +27,7 @@ The general objective is to explore data from Twitter with the hashtag #AlevelRe
 
 ## Data
 
-78,839 tweets have been downloaded from 8/14/2020 to 9/2/2020 (when discussions dissolves) using as a criterion the hashtag #AlevelResults. This hashtag was trending topic when the discussion exploded on past 14th of August. 
+78,993 tweets have been downloaded from 8/14/2020 to 9/2/2020 (when discussions dissolves) using as a criterion the hashtag #AlevelResults. This hashtag was trending topic when the discussion exploded on past 14th of August. 
 
 ## Methods
 * General charts to initially explore data (ggplot2)
