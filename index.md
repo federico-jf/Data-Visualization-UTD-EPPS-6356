@@ -342,21 +342,21 @@ ofqual %>%
                    max.words = 100)
 ```
 ## Conclusions
-•Results favored students who were enrolled in better schools even if their grades wereworse, compared to those in schools with historically worse performance.
+• Results favored students who were enrolled in better schools even if their grades wereworse, compared to those in schools with historically worse performance.
 
-•Private schools vs Public schools.
+• Private schools vs Public schools.
 
-•Impact on future educational life:exam conditions access to Higher Education institutions & limits opportunities for social mobility.
+• Impact on future educational life:exam conditions access to Higher Education institutions & limits opportunities for social mobility.
 
-•After the publication of the results, the reaction on Twitter was immediate and short.
+• After the publication of the results, the reaction on Twitter was immediate and short.
 
-•Mostof the participants had lessthan 5000 followers, but there was a considerable group of tweeters with many followers who supported the dissemination of the trending topic.
+• Most of the participants had lessthan 5000 followers, but there was a considerable group of tweeters with many followers who supported the dissemination of the trending topic.
 
-•Most of top tweeters were coming from the USA. However, top tweeters were not the most active in the discussion.
+• Most of top tweeters were coming from the USA. However, top tweeters were not the most active in the discussion.
 
-•Unilateral space of communication: division between the ones who protest and the ones who are interpellated. The interpellated ones didn't tweet anything.
+• Unilateral space of communication: division between the ones who protest and the ones who are interpellated. The interpellated ones didn't tweet anything.
 
-•Irony and anger were the prevalent feelings in tweets that mentioned Boris Johnson and Melvin Williamson.
+• Irony and anger were the prevalent feelings in tweets that mentioned Boris Johnson and Melvin Williamson.
 
 •The demand in terms of inequality seems to be more conceptualized in the Ofqual's word cloud.
 
