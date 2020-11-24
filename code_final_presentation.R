@@ -53,8 +53,8 @@ ggplot(data=mydata3, aes(x=Day, y=Number.of.tweets, group=1)) +
   theme(text=element_text(size=12, family = "serif", face = "bold"))
 
 
-# Barplot faceted barplot: Top 10 tweeters using #AlevelResults by location
-#reading in the data
+# Faceted barplot: Top 10 tweeters using #AlevelResults by location
+# reading in the data
 mydata2 <- read.delim("/Users/feder/Desktop/top_tweeters.txt")
 head(mydata2)
 
