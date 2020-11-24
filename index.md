@@ -356,7 +356,7 @@ ofqual %>%
 
 • Unilateral space of communication: division between the ones who protest and the ones who are interpellated. The interpellated ones didn't tweet anything.
 
-• Irony and anger were the prevalent feelings in tweets that mentioned Boris Johnson and Melvin Williamson.
+• Irony and anger were the prevalent feelings in tweets that mentioned Boris Johnson and Gavin Williamson.
 
 •The demand in terms of inequality seems to be more conceptualized in the Ofqual's word cloud.
 
