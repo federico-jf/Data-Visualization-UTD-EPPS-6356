@@ -40,6 +40,24 @@ The general objective is to explore data from Twitter with the hashtag #AlevelRe
 ![general_results](https://user-images.githubusercontent.com/53381800/100023702-09159900-2dab-11eb-8731-4de8c7ffd6cb.png)
 Ofqual's algorithm reduced 39.1% of the estimated grades and increased 2.26% compared to the teachers' predictions.
 
+```R
+# Barplot A-level exam general results
+area.color <- c("firebrick3", "firebrick3", "firebrick3", "springgreen4", "steelblue1", 
+                "steelblue1", "steelblue1")
+barplot<-ggplot(data=mydata, aes(x=Difference, y=Percentage)) +
+  geom_bar(stat="identity", width=0.9, fill=area.color)+
+  geom_text(aes(label=Percentage), vjust=-0.3, size=3.5)+
+  labs(title="A-level results in UK (2020) compared with teachers' predictions", 
+       caption= "Data Source: BBC", 
+       x="Difference with teachers' predictions", y = "Percentage")+
+  theme_minimal() + 
+  geom_vline(xintercept = 3.5, linetype="dotted", 
+             color = "firebrick3", size=1.1)+
+  annotate("text", x = 1.9, y = 50, label = "Almost 4 out of 10", family="serif", size=5) +
+  annotate("text", x = 1.9, y = 47, label = "students were downgraded",  family="serif", size=5) +
+  theme(text=element_text(size=14,  family="serif"))
+barplot
+```
 #### How has the reaction around #AlevelResults on Twitter developed in time? 
 ![tweets_per_day](https://user-images.githubusercontent.com/53381800/100024534-9c030300-2dac-11eb-9e63-f8b961bce2d2.png)
 
