@@ -43,7 +43,7 @@ Ofqual's algorithm reduced 39.1% of the estimated grades and increased 2.26% com
 #### How has the reaction around #AlevelResults on Twitter developed in time? 
 ![tweets_per_day](https://user-images.githubusercontent.com/53381800/100024534-9c030300-2dac-11eb-9e63-f8b961bce2d2.png)
 
-#### How has the reaction around #AlevelResults on Twitter developed in time? 
+#### How has the reaction around #AlevelResults on Twitter developed in time? (considering number of followers)
 ![Number of followers by time](https://user-images.githubusercontent.com/53381800/100024633-c94fb100-2dac-11eb-98aa-2f99f28a0b8c.png)
 
 #### Who are the top users involved in the discussion around #AlevelResults on Twitter? From which geographic locations did these users participate? 
