@@ -117,16 +117,12 @@ rm(list=ls())
 #call libraries
 library(igraph)
 library(rtweet)
-library(igraph)
 library(ggraph)
 require("hrbrthemes")
 require("ggraph")
 library(tidyverse)
 
 # reading in the data
-
-g <- read.delim("/Users/feder/Desktop/BASE.txt")
-g <- read.delim("/Users/feder/Desktop/BASE2.txt")# this base contains from 14 to 17 Aug
 g <- read.delim("/Users/feder/Desktop/BASE14.txt")
 
 # create data graph
