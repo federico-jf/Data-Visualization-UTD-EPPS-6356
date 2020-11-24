@@ -86,7 +86,22 @@ ggplot(data=mydata3, aes(x=Day, y=Number.of.tweets, group=1)) +
 
 #### How has the reaction around #AlevelResults on Twitter developed in time? (considering number of followers)
 ![Number of followers by time](https://user-images.githubusercontent.com/53381800/100024633-c94fb100-2dac-11eb-98aa-2f99f28a0b8c.png)
+```R
+# check if time is continuos variable
+class(complete_tweets$time)
 
+# scatterplot 
+ggplot(aes(x=time, y=user_followers_count), data=complete_tweets) +
+  geom_point(alpha=0.05, color= 'steelblue')+
+    labs(title="How influential tweeters are?", 
+       x="Time", y = "User's followers count")+
+  scale_y_continuous(limit=c(1,25000), breaks = seq(0,25000,2500)) +
+  theme(text=element_text(size=14,  family="Garamond")) +
+  theme_minimal()
+```
+
+#### Who are the top users involved in the discussion around #AlevelResults on Twitter? From which geographic locations did these users participate? 
+![top 15 tweeters by location](https://user-images.githubusercontent.com/53381800/100024674-df5d7180-2dac-11eb-8d2f-1ce4d666e0dd.png)
 ```R
 # Faceted barplot: Top 10 tweeters using #AlevelResults by location
 # reading in the data
@@ -104,9 +119,6 @@ barplot2<-ggplot(data=mydata2, aes(x=number_of_followers, y=from_user, xaxt="n")
   facet_wrap(~location, ncol=2) 
 barplot2 
 ```
-
-#### Who are the top users involved in the discussion around #AlevelResults on Twitter? From which geographic locations did these users participate? 
-![top 15 tweeters by location](https://user-images.githubusercontent.com/53381800/100024674-df5d7180-2dac-11eb-8d2f-1ce4d666e0dd.png)
 
 #### Exploring the structure of the network
 ![SNA more mentioned1](https://user-images.githubusercontent.com/53381800/100032837-7da60300-2dbe-11eb-9895-bbbaf46e9365.png)
