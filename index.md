@@ -342,21 +342,24 @@ ofqual %>%
                    max.words = 100)
 ```
 ## Conclusions
-•	Results favored students who were enrolled in better schools even if their grades were worse, compared to those in schools with historically worse performance.
+•Results favored students who were enrolled in better schools even if their grades wereworse, compared to those in schools with historically worse performance.
 
-•	Private schools versus Public schools.
+•Private schools vs Public schools.
 
-•	Impact on future educational life: conditions access to higher education institutions & limits opportunities for social mobility.
+•Impact on future educational life:exam conditions access to Higher Education institutions & limits opportunities for social mobility.
 
-•	After the publication of the results, the reaction on Twitter was immediate and short.
+•After the publication of the results, the reaction on Twitter was immediate and short.
 
-•	Most of the participants have less than 5000 followers, but there is a considerable group of tweeters with many followers who support the dissemination of the trending topic.
+•Mostof the participants had lessthan 5000 followers, but there was a considerable group of tweeters with many followers who supported the dissemination of the trending topic.
 
-•	Most of top tweeters are coming from the USA. However, top tweeters are not the most active in the discussion.
+•Most of top tweeters were coming from the USA. However, top tweeters were not the most active in the discussion.
 
-•	Irony and anger in tweets that mention Boris Johnson and Melvin Williamson.
+•Unilateral space of communication: division between the ones who protest and the ones who are interpellated. The interpellated ones didn't tweet anything.
 
-•	The demand in terms of inequality seems to be more conceptualized in the Ofqual's word cloud. 
+•Irony and anger were the prevalent feelings in tweets that mentioned Boris Johnson and Melvin Williamson.
+
+•The demand in terms of inequality seems to be more conceptualized in the Ofqual's word cloud.
+
 
 
 ## Explore the #AlevelResults Database!
