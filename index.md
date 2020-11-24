@@ -61,6 +61,29 @@ barplot
 #### How has the reaction around #AlevelResults on Twitter developed in time? 
 ![tweets_per_day](https://user-images.githubusercontent.com/53381800/100024534-9c030300-2dac-11eb-9e63-f8b961bce2d2.png)
 
+```R
+# Number of tweets per day: line chart
+mydata3 <- read.delim("/Users/feder/Desktop/tweets_per_day.txt")
+head(mydata3)
+ggplot(data=mydata3, aes(x=Day, y=Number.of.tweets, group=1)) +
+  geom_line(color="pink", size=2.5)+
+  geom_text(aes(label=Number.of.tweets), vjust=-0.3, size=3.8, family = "serif")+
+  geom_point()+
+  labs(title="Number of tweets using #AlevelResults per day", 
+       x="Day", y = "Number of tweets")+
+  scale_color_brewer(palette="Paired")+
+  geom_vline(xintercept = 1, linetype="dotted", 
+             color = "red", size=1.2)+
+  geom_vline(xintercept = 2.5, linetype="dotted", 
+             color = "limegreen", size=1.2)+
+  annotate("text", x = 4.7, y = 19000, label = "A-Level Results are published", family = "serif") +
+  annotate("text", x = 2.3, y = 10000, label = "UK government", family = "serif") +
+  annotate("text", x = 1.9, y = 8500, label = "anticipates", family = "serif") +
+  annotate("text", x = 2.5, y = 7000, label = "''triple lock'' solution:", family = "serif") +
+  annotate("text", x = 3.6, y = 5500, label = "acept, retake or receive mock grade", family = "serif") +
+  theme_minimal()+
+  theme(text=element_text(size=12, family = "serif", face = "bold"))
+  ```
 #### How has the reaction around #AlevelResults on Twitter developed in time? (considering number of followers)
 ![Number of followers by time](https://user-images.githubusercontent.com/53381800/100024633-c94fb100-2dac-11eb-98aa-2f99f28a0b8c.png)
 
