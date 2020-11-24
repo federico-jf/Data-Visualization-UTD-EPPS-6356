@@ -36,6 +36,7 @@ The general objective is to explore data from Twitter with the hashtag #AlevelRe
 
 ## Results and visualizations
 
+#### General results
 ![general_results](https://user-images.githubusercontent.com/53381800/100023702-09159900-2dab-11eb-8731-4de8c7ffd6cb.png)
 Ofqual's algorithm reduced 39.1% of the estimated grades and increased 2.26% compared to the teachers' predictions.
 
