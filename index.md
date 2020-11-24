@@ -39,7 +39,6 @@ The general objective is to explore data from Twitter with the hashtag #AlevelRe
 #### General results
 ![general_results](https://user-images.githubusercontent.com/53381800/100023702-09159900-2dab-11eb-8731-4de8c7ffd6cb.png)
 Ofqual's algorithm reduced 39.1% of the estimated grades and increased 2.26% compared to the teachers' predictions.
-
 ```R
 # Barplot A-level exam general results
 area.color <- c("firebrick3", "firebrick3", "firebrick3", "springgreen4", "steelblue1", 
@@ -58,9 +57,9 @@ barplot<-ggplot(data=mydata, aes(x=Difference, y=Percentage)) +
   theme(text=element_text(size=14,  family="serif"))
 barplot
 ```
+
 #### How has the reaction around #AlevelResults on Twitter developed in time? 
 ![tweets_per_day](https://user-images.githubusercontent.com/53381800/100024534-9c030300-2dac-11eb-9e63-f8b961bce2d2.png)
-
 ```R
 # Number of tweets per day: line chart
 mydata3 <- read.delim("/Users/feder/Desktop/tweets_per_day.txt")
@@ -84,8 +83,27 @@ ggplot(data=mydata3, aes(x=Day, y=Number.of.tweets, group=1)) +
   theme_minimal()+
   theme(text=element_text(size=12, family = "serif", face = "bold"))
   ```
+
 #### How has the reaction around #AlevelResults on Twitter developed in time? (considering number of followers)
 ![Number of followers by time](https://user-images.githubusercontent.com/53381800/100024633-c94fb100-2dac-11eb-98aa-2f99f28a0b8c.png)
+
+```R
+# Barplot faceted barplot: Top 10 tweeters using #AlevelResults by location
+#reading in the data
+mydata2 <- read.delim("/Users/feder/Desktop/top_tweeters.txt")
+head(mydata2)
+
+barplot2<-ggplot(data=mydata2, aes(x=number_of_followers, y=from_user, xaxt="n")) +
+  geom_bar(stat="identity", width=0.9, fill="aquamarine3") +
+  geom_text(aes(label=number_of_followers), vjust=-0.3, size=3) +
+  labs(title="Top 10 tweeters using #AlevelResults by location", 
+  x="Number of followers", y = "Tweet users") +
+  theme(text=element_text(size=12,family="Serif")) +
+  theme_light() +
+  scale_x_continuous(limit=c(0,600000), breaks=seq(0,600000,600001)) +
+  facet_wrap(~location, ncol=2) 
+barplot2 
+```
 
 #### Who are the top users involved in the discussion around #AlevelResults on Twitter? From which geographic locations did these users participate? 
 ![top 15 tweeters by location](https://user-images.githubusercontent.com/53381800/100024674-df5d7180-2dac-11eb-8d2f-1ce4d666e0dd.png)
