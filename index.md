@@ -42,16 +42,22 @@ Ofqual's algorithm reduced 39.1% of the estimated grades and increased 2.26% com
 #### How has the reaction around #AlevelResults on Twitter developed in time? 
 ![tweets_per_day](https://user-images.githubusercontent.com/53381800/100024534-9c030300-2dac-11eb-9e63-f8b961bce2d2.png)
 
+#### How has the reaction around #AlevelResults on Twitter developed in time? 
 ![Number of followers by time](https://user-images.githubusercontent.com/53381800/100024633-c94fb100-2dac-11eb-98aa-2f99f28a0b8c.png)
 
+#### Who are the top users involved in the discussion around #AlevelResults on Twitter? From which geographic locations did these users participate? 
 ![top 15 tweeters by location](https://user-images.githubusercontent.com/53381800/100024674-df5d7180-2dac-11eb-8d2f-1ce4d666e0dd.png)
 
+#### Exploring the structure of the network
 ![SNA more mentioned1](https://user-images.githubusercontent.com/53381800/100032837-7da60300-2dbe-11eb-9895-bbbaf46e9365.png)
 
+#### What is the influential network or sub-community that most participates in? 
 ![SNA & tweets](https://user-images.githubusercontent.com/53381800/100024836-2ea3a200-2dad-11eb-873a-264340702159.png)
 
+#### Who are the most interpellated ones in the discussion?
 ![image](https://user-images.githubusercontent.com/53381800/100024955-71657a00-2dad-11eb-9da8-9a941369aa84.png)
 
+#### What feelings are associated with the texts published in the tweets?
 ![image](https://user-images.githubusercontent.com/53381800/100025027-9ce86480-2dad-11eb-8ab1-e08a275e3356.png)
 
 
