@@ -91,7 +91,7 @@ ggplot(data=mydata3, aes(x=Day, y=Number.of.tweets, group=1)) +
 ### How has the reaction around #AlevelResults on Twitter developed in time? (considering number of followers)
 ![Number of followers by time](https://user-images.githubusercontent.com/53381800/100024633-c94fb100-2dac-11eb-98aa-2f99f28a0b8c.png)
 ```R
-# check if time is continuos variable
+# check if time is continuous variable
 class(complete_tweets$time)
 
 # scatterplot 
