@@ -136,6 +136,7 @@ barplot2
 
 ### Exploring the structure of the network
 ![SNA more mentioned1](https://user-images.githubusercontent.com/53381800/100032837-7da60300-2dbe-11eb-9895-bbbaf46e9365.png)
+In figure 5 is exhibit the structure of the network highlighting the tweeters who are more mentioned (@username) in the tweets. Using the library igraph in R, node labels and node size were defined in order to filter the more mentioned users. As a result, the size of the nodes (in blue) is proportional to the number of mentions (indegree index). Once the graph was obtained, the profile of each of the identified names was analyzed throughout an exploration on Twitter. At first sight, we can group the names among those who are protesting and those who are interpellated.
 ```R
 # call library
 library(igraph)
