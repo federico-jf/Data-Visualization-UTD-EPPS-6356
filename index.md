@@ -62,6 +62,7 @@ barplot
 
 ### How has the reaction around #AlevelResults on Twitter developed in time? 
 ![tweets_per_day](https://user-images.githubusercontent.com/53381800/100024534-9c030300-2dac-11eb-9e63-f8b961bce2d2.png)
+Figure 2 shows the number of tweets using #AlevelResults per day. As the line graph shows, after the publication of the results, the reaction on Twitter was immediate but short (its intensity remained around 5 days). The line chart was developed to highlight some milestones using vertical dotted lines, such as the anticipated response of the government (the so-called “triple lock” solution) and the day of the publication of the A-Level exam results. The specific number of tweets is also displayed for each day the data was collected. The theme selected was Minimal with modification of style and size font.
 ```R
 # Number of tweets per day: line chart
 mydata3 <- read.delim("/Users/feder/Desktop/tweets_per_day.txt")
