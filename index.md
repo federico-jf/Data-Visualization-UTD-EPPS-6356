@@ -111,6 +111,9 @@ ggplot(aes(x=time, y=user_followers_count), data=complete_tweets) +
 
 ### Who are the top users involved in the discussion around #AlevelResults on Twitter? From which geographic locations did these users participate? 
 ![top 15 tweeters by location](https://user-images.githubusercontent.com/53381800/100024674-df5d7180-2dac-11eb-8d2f-1ce4d666e0dd.png)
+In figure 4, it is explored who are the top 10 tweeters using #AlevelResults considering the location. As can be seen, most of the top tweeters were not coming from the United Kingdom. However, top tweeters were not the most active in the discussion as will be shown in a posterior chart. This figure shows, without a doubt, how the discussion took on a global scale.
+In technical terms, this barplot was built using faceting (facet_wrap) in order to split the data into two columns considering the tweeters ’location (“rest of the world" or United Kindom).
+
 ```R
 # Faceted barplot: Top 10 tweeters using #AlevelResults by location
 # reading in the data
