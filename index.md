@@ -180,6 +180,7 @@ ggraph(g, layout = "kk") +
 ### What is the network (or subcommunity) that participates the most?
 ![SNA & tweets](https://user-images.githubusercontent.com/53381800/100024836-2ea3a200-2dad-11eb-873a-264340702159.png)
 
+In Figure 6, the most mentioned tweeters that we could classify as "protesters" are identified: @DunsPictus (an academic lawyer dedicated to ethical topics), @ green_woman1 (who is self-introduced as wildlife, natural world, and photography lover), @lewis_goodall (a journalist who covered the topic in the news), @ChristineJameis (who is self-defined as an activist), and @ RobBrooks2 (a poet working with topics linked to learning). In fact, these users are the most retweeted during the discussion. The content of their most retweeted texts is shown in Figure 6.
 
 ### Who are the most interpellated ones in the discussion?
 ![image](https://user-images.githubusercontent.com/53381800/100024955-71657a00-2dad-11eb-9da8-9a941369aa84.png)
