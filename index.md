@@ -38,7 +38,7 @@ The general objective is to explore data from Twitter with the hashtag #AlevelRe
 
 ### General results
 ![general_results](https://user-images.githubusercontent.com/53381800/100023702-09159900-2dab-11eb-8731-4de8c7ffd6cb.png)
-Ofqual's algorithm reduced 39.1% of the estimated grades and increased 2.26% compared to the teachers' predictions.
+As it can be seen in Figure 1, Ofqual's algorithm reduced 39.1% of the estimated grades and increased 2.26% compared to the teachers' predictions. This graphic is a replication of a graphic published by the BBC. In this bar chart, different colors were assigned to the bars according to whether there are positive, negative, or no differences. In addition, a vertical line separates the bars that indicate negative differences between teachers' predictions and the results of the algorithm. Specific text was also added in the up-left zone to emphasize the ratio of students that were downgraded.
 ```R
 # Barplot A-level exam general results
 area.color <- c("firebrick3", "firebrick3", "firebrick3", "springgreen4", "steelblue1", 
