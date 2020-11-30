@@ -62,7 +62,7 @@ barplot
 
 ### How has the reaction around #AlevelResults on Twitter developed in time? 
 ![tweets_per_day](https://user-images.githubusercontent.com/53381800/100024534-9c030300-2dac-11eb-9e63-f8b961bce2d2.png)
-Figure 2 shows the number of tweets using #AlevelResults per day. As the line graph shows, after the publication of the results, the reaction on Twitter was immediate but short (its intensity remained around 5 days). The line chart was developed to highlight some milestones using vertical dotted lines, such as the anticipated response of the government (the so-called “triple lock” solution) and the day of the publication of the A-Level exam results. The specific number of tweets is also displayed for each day the data was collected. The theme selected was Minimal with modification of style and size font.
+Figure 2 shows the number of tweets using #AlevelResults per day. As the line graph shows, after the publication of the results, the reaction on Twitter was immediate but short (its intensity remained around 5 days). The line chart was developed to highlight some milestones using vertical dotted lines and texts, such as the anticipated response of the government (the so-called “triple lock” solution) and the day of the publication of the A-Level exam results. The specific number of tweets is also displayed for each day the data was collected. The theme selected was Minimal with modification of style and size font.
 ```R
 # Number of tweets per day: line chart
 mydata3 <- read.delim("/Users/feder/Desktop/tweets_per_day.txt")
@@ -91,6 +91,9 @@ ggplot(data=mydata3, aes(x=Day, y=Number.of.tweets, group=1)) +
 
 ### How has the reaction around #AlevelResults on Twitter developed in time? (considering number of followers)
 ![Number of followers by time](https://user-images.githubusercontent.com/53381800/100024633-c94fb100-2dac-11eb-98aa-2f99f28a0b8c.png)
+Figure 3 is a scatter diagram showing the relationship between the date of the tweet and the number of followers each tweeter had. The idea of this graph is to explore how influential the tweeters involved in the discussion were. The figure indicates that the majority of the participants had less than 5000 followers, but there was a considerable group of influential tweeters who supported the dissemination of the trending topic. In this regard, this can be interesting to analyze how a topic becomes a trending topic on the social network: it requires high participation of tweeters with an average number of followers that in turn are supported by tweeters more influential who provide visibility to the discussion. 
+In technical terms, this scatterplot defines alpha = 0.05 to achieve transparency of the blue points (which means that 20 overlapping points equal to one solid point). The y-axis was also manipulated to focus the graph between 1 and 25000 followers and thus avoid that the presence of outliers impedes the visibility of the graph in more detail.
+
 ```R
 # check if time is continuous variable
 class(complete_tweets$time)
