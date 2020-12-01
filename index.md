@@ -362,10 +362,15 @@ ofqual %>%
 ## Conclusions
 
 This year, the results of the A-level exams in which Ofqual's algorithm was implemented undoubtely favored students who were enrolled in better schools even if their grades were worse, compared to those in schools with historically worse performance. This situation raised the discussion about whether the algorithm measured skills and knowledge or social conditions of the students. For this reason, many of the arguments distinguished two clearly differentiated scenarios for the purpose of understanding the phenomenon: private schools results versus public schools results.
+
 As these exams condition access to Higher Education institutions and limits opportunities for social mobility, the response in the media and on social networks did not wait. After the publication of the results, the reaction on Twitter was immediate but short. 
+
 Analyzing the composition of tweeters, most of the participants had less than 5000 followers, but there was a considerable group of tweeters with many followers who supported the dissemination of the trending topic. 
+
 Additionally, most of top tweeters were not from de United Kingdom nor they were the most active in the discussion. Their contribution seems be linked to the visibility of the reaction in the social network.
+
 If the type of communication is analyzed, there is a clear division between those who protest and those who are questioned. The latter do not tweet but are mentioned and asked to intervene in the discussion. In general terms, this case seems to be presented as a predominantly "unilateral" communication space focused on protest with low real interaction. The retweet activity implies the vindication of one's position, to strengthen it or to complain by mentioning an antagonist.
+
 Regarding Sentiment Analysis, irony and anger were the prevalent feelings in tweets that mentioned Boris Johnson and Gavin Williamson. However, the demand in terms of inequality and injustice seems to be conceptualized in a refined way in the Ofqual's word cloud. This corpus could be considered in future analysis with the purpose of analyze more precise results in terms of meanings verted in the #AlevelResults discussion.
 
 
