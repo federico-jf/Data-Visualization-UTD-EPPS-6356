@@ -381,6 +381,7 @@ ofqual %>%
 
 
 ## Explore the #AlevelResults Database!
+Finally, a Shiny App was constructed, published, and embedded in the project blog hosted on GitHub. The objective is that readers can explore the entire database so that they can review variables and read all the texts of the tweets that entered this analysis.
 <iframe width="1000" height="700" src="https://federicoferrero.shinyapps.io/assignment7b/"></iframe>
 
 ```R
