@@ -7,30 +7,33 @@
 
 ## Context of the Research Questions: the #AlevelResults Case
 
-Every year in the United Kingdom, “Level A” exams are taken by young people to determine which university they can aspire to. However, this year such tests were suspended due to the COVID-19 pandemic and the school lockdowns. Instead, high school teachers were asked to give a predicted grade for their pupils and then rank them in order within their class. Posteriorly, an algorithm was expected to only adjust and standardize results at the national level. With the purpose of calculating the final grades, the algorithm of the Office of Qualifications and Examinations Regulation (named "Ofqual") used the historical performance of schools and the ranking of students within their own school.
+Every year in the United Kingdom, “Level A” exams are taken by young people to determine which university they can aspire to. However, this year such tests were suspended due to the COVID-19 pandemic and the school lockdowns. Instead, high school teachers were asked to give a predicted grade for their pupils and then rank them in order within their class. Posteriorly, an algorithm was expected to adjust and standardize results at the national level. With the purpose of calculating the final grades, the algorithm of the Office of Qualifications and Examinations Regulation (named “Ofqual”) used the historical performance of schools and the ranking of students within their own school.
 
-The result was that 37% of estimated grades were lowered and 5.3% were raised by Ofqual's algorithm in comparison with teachers' predictions. The unexpected effect was that the algorithm ended up benefitting private schools over public schools. This meant that results favored those students who were enrolled in better schools even if their grades were worse, compared to those in schools with historically worse performance. As a result, in some cases, bright pupils in poorly performing schools saw their grades lowered because last year’s cohort of pupils did not do well in their exams.
+The result was that 39.1 % of estimated grades were lowered and 2.26 % were raised by Ofqual’s algorithm in comparison with teachers’ predictions. The unexpected effect was that the algorithm ended up benefitting private schools over public schools. This meant that results favored those students who were enrolled in better schools even if their grades were worse, compared to those in schools with historically worse performance. As a result, in some cases, bright pupils in poorly performing schools saw their grades lowered because last year’s cohort of pupils did not do well in their exams.
 
-It is evident that such a situation can have an impact on the future life of students since it conditions the higher education institutions they can access and limits their opportunities for social mobility.
+It is evident that such a situation can have an impact on the future life of students since it conditions the Higher Education institutions they can access and limits their opportunities for social mobility.
 
 As soon as the results were known on past August 13th, the demonstrations of students, teachers, and educational institutions on social networks did not wait. Mainly on Twitter with the hashtag #AlevelResults, comments about lack of consistency, the erratic and disconcerting character of the results, and anomalies in the construction of the model used by Ofqual were just some of the main public manifestations.
 
 As corollary, in the face of media pressure, the United Kingdom government ended up discarding the A levels results corrected by the algorithm and established a plan of future evaluations and appeals to mitigate the biased results.
 
-Seen in perspective, the "#AlevelResults" case is one of the first times that public opinion has spoken out so strongly about results considered unfair coming from evaluations driven by algorithms in educational settings. Undoubtedly, the analysis of such data can be a great opportunity to explore the reaction and the arguments offered by students and teachers. To everyone's concern, it is expected that situations like these will become more and more frequent in educational organizations.
+Seen in perspective, the #AlevelResults case is one of the first times that public opinion has spoken out so strongly about results considered unfair coming from evaluations driven by algorithms in educational settings at national level. Undoubtedly, the analysis of such data can be a great opportunity to explore the reaction and the arguments offered by students and teachers. To everyone's concern, situations like these are expected to become more and more frequent in educational organizations in the coming years.
+
 
 ## Research Questions
 
-The general objective is to explore data from Twitter with the hashtag #AlevelResults in order to produce visualizations about the social network and about the content of the published tweets. Specifically, the main questions that will be addressed are:
+The general objective is to explore data from Twitter with the hashtag #AlevelResults in order to produce initial visualizations about the social network and about the content of the published tweets. Specifically, the questions that will be addressed are:
 
 • How has the reaction around #AlevelResults on Twitter developed in time? • From which geographic locations did users participate? • What is the network or sub-community that most participates in the discussion (tweets with responses and interactions)? • Who are the top users involved in the discussion around #AlevelResults on Twitter? • What feelings are associated with the texts published in the tweets?
 
 ## Data
 
-Using personal Twitter API 78,839 tweets have been downloaded from 8/14/2020 to 9/2/2020 (when the last tweet about the topic was recorder) considering as a criterion the hashtag #AlevelResults. This hashtag was trending topic when the discussion exploded on past 14th of August. 
+Using personal Twitter API, 78,839 tweets have been downloaded from 8/14/2020 to 9/2/2020 (when the last tweets about the topic was recorded) considering as a criterion the hashtag #AlevelResults. This hashtag was trending topic when the discussion exploded on past 14th of August. 
+
 The main variables worked were the following (although new ones were created when needed): Id_str, From_user, Text, Created_at, Time, In_reply_to_user_id_str, In_reply_to_screen_name, From_user_id_str, In_reply_to_status_id_str, Profile_image_url, User_followers_count, User_friends_count, User_location.
 
 ## Methods
+
 The visualization techniques used include general charts to initially explore data with R using ggplot2 library. Then, with igraph library Social Network Analysis was implemented to visualize the network of interactions, retweets, and mentions. Finally, Text Mining techniques were applied (specifically Sentiment Analysis with tidytext and reshape2 libraries) over Twitter content with hashtag #AlevelResults. Detailed technical descriptions of each chart will be presented below.
 
 ## Results and visualizations
@@ -38,7 +41,8 @@ The visualization techniques used include general charts to initially explore da
 ### General results
 ![general_results](https://user-images.githubusercontent.com/53381800/100023702-09159900-2dab-11eb-8731-4de8c7ffd6cb.png)
 
-As it can be seen in Figure 1, Ofqual's algorithm reduced 39.1% of the estimated grades and increased 2.26% compared to the teachers' predictions. This graphic is a replication of a graphic published by the BBC. In this bar chart, different colors were assigned to the bars according to whether there are positive, negative, or no differences. In addition, a vertical line separates the bars that indicate negative differences between teachers' predictions and the results of the algorithm. Specific text was also added in the up-left zone to emphasize the ratio of students that were downgraded.
+As can be seen in Figure 1, Ofqual's algorithm reduced 39.1% of the estimated grades and increased 2.26% compared to the teachers' predictions. This graphic is a replication of a chart published by the BBC. In this bar chart, different colors were assigned to the bars according to whether there are positive, negative, or no differences. In addition, a vertical line separates the bars that indicate negative differences between teachers' predictions and the results of the algorithm. Specific text was also added in the up-left zone to emphasize the ratio of students that were downgraded.
+
 ```R
 # Barplot A-level exam general results
 area.color <- c("firebrick3", "firebrick3", "firebrick3", "springgreen4", "steelblue1", 
@@ -63,7 +67,10 @@ barplot
 ### How has the reaction around #AlevelResults on Twitter developed in time? 
 ![tweets_per_day](https://user-images.githubusercontent.com/53381800/100024534-9c030300-2dac-11eb-9e63-f8b961bce2d2.png)
 
-Figure 2 shows the number of tweets using #AlevelResults per day. As the line graph shows, after the publication of the results, the reaction on Twitter was immediate but short (its intensity remained around 5 days). The line chart was developed to highlight some milestones using vertical dotted lines and texts, such as the anticipated response of the government (the so-called “triple lock” solution) and the day of the publication of the A-Level exam results. The specific number of tweets is also displayed for each day the data was collected. The theme selected was Minimal with modification of style and size font.
+Figure 2 shows the number of tweets using #AlevelResults per day. As the line graph indicates, after the publication of the results, the reaction on Twitter was immediate but short (its intensity remained around 5 days).
+
+The line chart was developed to highlight some milestones using vertical dotted lines and texts, such as the anticipated response of the government (the so-called “triple lock” solution) and the day of the publication of the A-Level exam results. The specific number of tweets is also displayed for each day the data was collected. The theme selected was Minimal with modification of style and size font.
+
 ```R
 # Number of tweets per day: line chart
 mydata3 <- read.delim("/Users/feder/Desktop/tweets_per_day.txt")
@@ -93,7 +100,8 @@ ggplot(data=mydata3, aes(x=Day, y=Number.of.tweets, group=1)) +
 ### How has the reaction around #AlevelResults on Twitter developed in time? (considering number of followers)
 ![Number of followers by time](https://user-images.githubusercontent.com/53381800/100024633-c94fb100-2dac-11eb-98aa-2f99f28a0b8c.png)
 
-Figure 3 is a scatter diagram showing the relationship between the date of the tweet and the number of followers each tweeter had. The idea of this graph is to explore how influential the tweeters involved in the discussion were. The figure indicates that the majority of the participants had less than 5000 followers, but there was a considerable group of influential tweeters who supported the dissemination of the trending topic. In this regard, this can be interesting to analyze how a topic becomes a trending topic on the social network: it requires high participation of tweeters with an average number of followers that in turn are supported by tweeters more influential who provide visibility to the discussion. 
+Figure 3 is a scatterplot showing the relationship between the date of the tweet and the number of followers each tweeter had. The idea of this graph is to explore how influential the tweeters involved in the discussion were. The figure indicates that most of the participants have less than 5000 followers but, at the same time, there is a considerable group of influential tweeters who supported the dissemination of the trending topic. In this regard, this can be interesting to analyze how a topic becomes a trending topic on the social network: it requires high participation of tweeters with an average number of followers that, in turn, are supported by more influential tweeters who provide visibility to the discussion.
+
 In technical terms, this scatterplot defines alpha = 0.05 to achieve transparency of the blue points (which means that 20 overlapping points equal to one solid point). The y-axis was also manipulated to focus the graph between 1 and 25000 followers and thus avoid that the presence of outliers impedes the visibility of the graph in more detail.
 
 ```R
@@ -113,8 +121,9 @@ ggplot(aes(x=time, y=user_followers_count), data=complete_tweets) +
 ### Who are the top users involved in the discussion around #AlevelResults on Twitter? From which geographic locations did these users participate? 
 ![top 15 tweeters by location](https://user-images.githubusercontent.com/53381800/100024674-df5d7180-2dac-11eb-8d2f-1ce4d666e0dd.png)
 
-In figure 4, it is explored who are the top 10 tweeters using #AlevelResults considering the location. As can be seen, most of the top tweeters were not coming from the United Kingdom. However, top tweeters were not the most active in the discussion as will be shown in a posterior chart. This figure shows, without a doubt, how the discussion took on a global scale.
-In technical terms, this barplot was built using faceting (facet_wrap) in order to split the data into two columns considering the tweeters ’location (“rest of the world" or United Kindom).
+In figure 4, it is explored who are the top 10 tweeters using #AlevelResults considering their location. As can be seen, the chart shows clearly how the discussion took on a global scale. Moreover, it is important to note that most of the top tweeters were not coming from the United Kingdom. At the same time, these top tweeters were not the most active in the discussion (as will be shown in a later chart). All these findings allow to suggest that in the analyzed case the intervention of the top tweeters would be more linked to the dissemination of the movement rather than to the development of its content.
+
+In technical terms, this barplot was built using faceting (facet_wrap) in order to split the data into two columns considering the tweeters’ location (“rest of the world" or United Kingdom). The theme was “Light” and some modifications on the font were made.
 
 ```R
 # Faceted barplot: Top 10 tweeters using #AlevelResults by location
@@ -139,7 +148,8 @@ barplot2
 ### Exploring the structure of the network
 ![SNA more mentioned1](https://user-images.githubusercontent.com/53381800/100032837-7da60300-2dbe-11eb-9895-bbbaf46e9365.png)
 
-In figure 5 is exhibit the structure of the network highlighting the tweeters who are more mentioned (@username) in the tweets. The library igraph in R was used for this purpose. Additionally, using a conditional function, node labels and node size were defined in order to filter the more mentioned users. As a result, the size of the nodes (in blue) is proportional to the number of mentions (indegree index). Once the graph was obtained, the profile of each of the identified names was analyzed throughout an exploration on Twitter. At first sight, we can group the names among those who are protesting and those who are interpellated. 
+In figure 5 is exhibit the structure of the network highlighting the tweeters who are more mentioned (@username) in the tweets. The library igraph in R was used for this purpose. Additionally, using a conditional function, node labels and node size were defined in order to filter the more mentioned users. As a result, the size of the nodes (in blue) is proportional to the number of mentions (indegree index). Once the graph was obtained using kk algorithm, the profile of each of the identified names was analyzed throughout an exploration on Twitter. At first sight, we can group the names among those who are protesting and those who are interpellated. 
+
 ```R
 # call library
 library(igraph)
@@ -179,18 +189,18 @@ ggraph(g, layout = "kk") +
 ### What is the network (or subcommunity) that participates the most?
 ![SNA & tweets](https://user-images.githubusercontent.com/53381800/100024836-2ea3a200-2dad-11eb-873a-264340702159.png)
 
-In Figure 6, the most mentioned tweeters that we could classify as "protesters" are identified: @DunsPictus (an academic lawyer dedicated to ethical topics), @ green_woman1 (who is self-introduced as wildlife, natural world, and photography lover), @lewis_goodall (a journalist who covered the topic in the news), @ChristineJameis (who is self-defined as an activist), and @ RobBrooks2 (a poet working with topics linked to learning). In fact, these users are the most retweeted during the discussion. The content of their most retweeted texts is shown in Figure 6.
+In Figure 6, the most mentioned tweeters that we could classify as "protesters" are identified: @DunsPictus (an academic lawyer dedicated to ethical topics), @ green_woman1 (who is self-introduced as wildlife, natural world, and photography lover), @lewis_goodall (a journalist who covered the topic in the news), @ChristineJameis (who is self-defined as an activist), and @RobBrooks2 (a poet working with topics linked to learning). In fact, these users are the most retweeted during the discussion. The content of their most retweeted texts is shown in Figure 6.
 
 ### Who are the most interpellated ones in the discussion?
 ![image](https://user-images.githubusercontent.com/53381800/100024955-71657a00-2dad-11eb-9da8-9a941369aa84.png)
 
-In Figure 7, it is possible to identify the users most questioned: they are mostly politicians who in many cases have never tweeted with the specific hashtag. During the entire movement on Twitter, most of them are silent. Tweeters refer to them either to protest or to ask for their interventions on the matter. Among them, Gavin Williamson is the most mentioned (the Education Secretary of the current government), the Prime Minister Boris Johnson, Ofqual (the regulator entity responsible for the development and implementation of the algorithm), and Michael Gove (also a member of the Conservative Party, who is former Education Secretary and who is criticized for his previous evaluation policy in educational institutions). On the other hand, the tweets mention Keir Starmer (leader of the Labor Party), and Andy Burnham (also a member of the Labour Party). In these two last cases, users request intervention in the discussion as members of the opposition Party.
+In Figure 7, it is possible to identify the most questioned users: they are mostly politicians who in many cases have never tweeted with the specific hashtag. During the entire movement on Twitter, most of them are silent. Tweeters refer to them either to protest or to ask for their interventions on the matter. Among them, Gavin Williamson is the most mentioned (the Education Secretary of the current government). Then, we identify the Prime Minister Boris Johnson, Ofqual (the regulator entity responsible for the development and implementation of the algorithm), and Michael Gove (also a member of the Conservative Party, who is former Education Secretary and who is criticized for his previous evaluation policy in the British educational system). On the other hand, the tweets mention Keir Starmer (leader of the Labor Party) and Andy Burnham (also a member of the Labour Party). In these two last cases, users request intervention in the discussion as members of the opposition Party.
 
 
 ### What feelings are associated with the texts published in the tweets?
 ![image](https://user-images.githubusercontent.com/53381800/100025027-9ce86480-2dad-11eb-8ab1-e08a275e3356.png)
 
-Sentiment Analysis is shown in Figure 8. Using the tidytext library, tokenization was completed, punctuation and stop words were removed, and lowercase was converted. Subsequently, with the reshape2 library, word clouds were obtained that classify the terms (considering the "bing" lexicon) according to their negative (in red) or positive (in green) connotation. Three corpus of tweets were chosen according to the mention of Boris Johnson, Gavin Williamson, and Ofqual. In this initial exploration, the results obtained show that irony and anger were the prevalent sentiments in the tweets that referred to Boris Johnson and Gavin Williamson. Furthermore, the demand in terms of inequality appears to be more conceptualized in Ofqual's word cloud, suggesting that more sophisticated text mining techniques could be used in this set of tweets where the demands are better articulated and in a more complex way. It is considered that other techniques that use wider units of analysis (not just the individual words), could yield more precise results in terms of meaning.
+Sentiment Analysis is shown in Figure 8. Using the tidytext library tokenization was completed, punctuation and stop words were removed, and lowercase was converted. Subsequently, with the reshape2 library, word clouds were obtained that classify the terms (considering the "bing" lexicon) according to their negative (in red) or positive (in green) connotation. Three corpuses of tweets were chosen according to the mention of Boris Johnson, Gavin Williamson, and Ofqual. In this initial exploration, the results obtained show that irony and anger were the prevalent sentiments in the tweets that referred to Boris Johnson and Gavin Williamson. Furthermore, the demand in terms of inequality appears to be more conceptualized in Ofqual's word cloud, suggesting that more sophisticated text mining techniques could be used in this set of tweets where the texts are articulated in a more complex and meaningful way. It is considered that other techniques that use wider units of analysis (not just the individual words), could yield more precise results in terms of meaning clarification.
 
 ```R
 # SENTIMENT ANALYSIS
@@ -361,17 +371,18 @@ ofqual %>%
 ```
 ## Conclusions
 
-This year, the results of the A-level exams in which Ofqual's algorithm was implemented undoubtely favored students who were enrolled in better schools even if their grades were worse, compared to those in schools with historically worse performance. This situation raised the discussion about whether the algorithm measured skills and knowledge or social conditions of the students. For this reason, many of the arguments distinguished two clearly differentiated scenarios for the purpose of understanding the phenomenon: private schools results versus public schools results.
+This year, the results of the A-level exams in which Ofqual's algorithm was implemented favored students who were enrolled in better schools even if their grades were worse, compared to those in schools with historically worse performance. This situation raised the discussion about whether the algorithm actually measured skills and knowledge or just social conditions of the students. As corollary, much of the debate was finally framed in terms of two clearly differentiated scenarios: private schools results versus public schools results.
 
 As these exams condition access to Higher Education institutions and limits opportunities for social mobility, the response in the media and on social networks did not wait. After the publication of the results, the reaction on Twitter was immediate but short. 
 
 Analyzing the composition of tweeters, most of the participants had less than 5000 followers, but there was a considerable group of tweeters with many followers who supported the dissemination of the trending topic. 
 
-Additionally, most of top tweeters were not from de United Kingdom nor they were the most active in the discussion. Their contribution seems be linked to the visibility of the reaction in the social network.
+Additionally, most of influential tweeters were not from de United Kingdom nor they were the most active in the discussion. Their contribution seems have been linked to the visibility of the reaction in the social network at global scale.
 
-If the type of communication is analyzed, there is a clear division between those who protest and those who are questioned. The latter do not tweet but are mentioned and asked to intervene in the discussion. In general terms, this case seems to be presented as a predominantly "unilateral" communication space focused on protest with low real interaction. The retweet activity implies the vindication of one's position, to strengthen it or to complain by mentioning an antagonist.
+If the type of communication is analyzed, there is a clear division between those who protest and those who are questioned. The latter do not tweet but are mentioned and asked to intervene in the discussion. In general terms, this case seems to be presented as a predominantly "unilateral" communication space focused on protest with low real interaction. The retweet activity implies the vindication of one's position, either to strengthen it or to complain by mentioning an antagonist.
 
-Regarding Sentiment Analysis, irony and anger were the prevalent feelings in tweets that mentioned Boris Johnson and Gavin Williamson. However, the demand in terms of inequality and injustice seems to be conceptualized in a refined way in the Ofqual's word cloud. This corpus could be considered in future analysis with the purpose of analyze more precise results in terms of meanings verted in the #AlevelResults discussion.
+Regarding Sentiment Analysis, irony and anger were the prevalent feelings in tweets that mentioned Boris Johnson and Gavin Williamson. However, the demand in terms of inequality and injustice seems to be conceptualized in a refined way in the Ofqual's word cloud. This corpus could be considered in future analysis with the purpose of analyzing more precise results in terms of meanings verted in the #AlevelResults discussion.
+
 
 
 
