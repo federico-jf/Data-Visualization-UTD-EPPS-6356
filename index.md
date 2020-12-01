@@ -30,9 +30,7 @@ The general objective is to explore data from Twitter with the hashtag #AlevelRe
 78,993 tweets have been downloaded from 8/14/2020 to 9/2/2020 (when discussions dissolves) using as a criterion the hashtag #AlevelResults. This hashtag was trending topic when the discussion exploded on past 14th of August. 
 
 ## Methods
-* General charts to initially explore data (ggplot2)
-* Social Network Analysis (igraph)
-* Text Mining (Sentiment Analysis)
+The visualization techniques used include general charts to initially explore data with R using ggplot2 library. Then, with igraph library Social Network Analysis was implemented to visualize the network of interactions, retweets, and mentions. Finally, Text Mining techniques were applied (specifically Sentiment Analysis with tidytext and reshape2 libraries) over Twitter content with hashtag #AlevelResults. Detailed technical descriptions of each chart will be presented below.
 
 ## Results and visualizations
 
