@@ -190,6 +190,9 @@ In Figure 7, it is possible to identify the users most questioned: they are most
 
 ### What feelings are associated with the texts published in the tweets?
 ![image](https://user-images.githubusercontent.com/53381800/100025027-9ce86480-2dad-11eb-8ab1-e08a275e3356.png)
+
+Sentiment Analysis is shown in Figure 8. Using the tidytext library, tokenization was completed, punctuation and stop words were removed, and lowercase was converted. Subsequently, with the reshape2 library, word clouds were obtained that classify the terms (considering the "bing" lexicon) according to their negative (in red) or positive (in green) connotation. Three corpus of tweets were chosen according to the mention of Boris Johnson, Gavin Williamson, and Ofqual. In this initial exploration, the results obtained show that irony and anger were the prevalent sentiments in the tweets that referred to Boris Johnson and Gavin Williamson. Furthermore, the demand in terms of inequality appears to be more conceptualized in Ofqual's word cloud, suggesting that more sophisticated text mining techniques could be used in this set of tweets where the demands are better articulated and in a more complex way. It is considered that other techniques that use wider units of analysis (not just the individual words), could yield more precise results in terms of meaning.
+
 ```R
 # SENTIMENT ANALYSIS
 # Text mining exercises following Text Mining with R (Silge and Robinson, 2017)
