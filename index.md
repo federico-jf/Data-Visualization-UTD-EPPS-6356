@@ -185,6 +185,8 @@ In Figure 6, the most mentioned tweeters that we could classify as "protesters" 
 ### Who are the most interpellated ones in the discussion?
 ![image](https://user-images.githubusercontent.com/53381800/100024955-71657a00-2dad-11eb-9da8-9a941369aa84.png)
 
+In Figure 7, it is possible to identify the users most questioned: they are mostly politicians who in many cases have never tweeted with the specific hashtag. During the entire movement on Twitter, most of them are silent. Tweeters refer to them either to protest or to ask for their interventions on the matter. Among them, Gavin Williamson is the most mentioned (the Education Secretary of the current government), the Prime Minister Boris Johnson, Ofqual (the regulator entity responsible for the development and implementation of the algorithm), and Michael Gove (also a member of the Conservative Party, who is former Education Secretary and who is criticized for his previous evaluation policy in educational institutions). On the other hand, the tweets mention Keir Starmer (leader of the Labor Party), and Andy Burnham (also a member of the Labour Party). In these two last cases, users request intervention in the discussion as members of the opposition Party.
+
 
 ### What feelings are associated with the texts published in the tweets?
 ![image](https://user-images.githubusercontent.com/53381800/100025027-9ce86480-2dad-11eb-8ab1-e08a275e3356.png)
